@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            border: 3px solid #000;
+        }
+        
+        th, td {
+            border: 2px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #06f3eb;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        /* 🔥 efek transisi */
+        .nama {
+            transition: background-color 2s;
+            cursor: pointer;
+        }
+
+        .aktif {
+            background-color: #ff9800 !important;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>NIM</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+           <td>1</td>
+           <td class="nama">deko</td>
+           <td>2302021001</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="nama">miul</td>
+            <td>2302021009</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td class="nama">juhub</td>
+            <td>2302021011</td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    const namaCells = document.querySelectorAll('.nama');
+
+    namaCells.forEach(cell => {
+        cell.addEventListener('click', function() {
+            cell.classList.add('aktif');
+
+            // balik lagi setelah 2 detik
+            setTimeout(() => {
+                cell.classList.remove('aktif');
+            }, 2000);
+        });
+    });
+</script>
+
+</body>
+</html>

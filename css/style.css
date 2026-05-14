@@ -1,0 +1,21 @@
+div {
+    background-color: rgb(255, 238, 0);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 25px;
+    position: absolute;
+}
+
+p {
+    color: yellow;
+}
+
+.relativ{
+    position: relative;
+    background-color: red;
+}
+
+.absolut{
+    position: relative;
+    background-color: green;
+}

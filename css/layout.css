@@ -1,0 +1,49 @@
+:root{
+    --text-color: #fff;
+    --text-color: #337A87;
+}
+
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+ul.sidebar-menu{
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+ul.sidebar-menu a {
+    display: block;
+    height: 40px;
+    background-color: rgb(99, 72, 72);
+    border-bottom: 1px solid rgb(117, 107, 107);
+    padding: 20px 10px 0;
+    color: azure;
+}
+
+ul.sidebar-menu a:hover {
+    background-color: #ddd;
+    text-decoration: none;
+    color: #ddd;
+}
+
+ul.sidebar-menu a:hover i {
+    transform: rotateY(180deg);
+}
+
+a {
+    text-decoration: none;
+}
+aside {
+    width: 250px;
+    background-color: rgb(80, 80, 80);
+    padding: 20px 20px;
+}
+
+.profile-image,
+.user-name {
+    text-align: center;
+}
